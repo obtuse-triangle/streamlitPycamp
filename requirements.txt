@@ -1,4 +1,4 @@
 streamlit
 pandas
-firbase_admin
+firebase_admin
 matplotlib
