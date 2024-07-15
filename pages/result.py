@@ -44,6 +44,10 @@ st.code("a=3, b=4", language="sql")
 
 st.write("## 점수: ", sum(question))
 
+if st.button("다른 학생의 결과도 확인해보기", type="primary"):
+    st.switch_page("pages/allresult.py")
+
+
 import firebase_admin
 from firebase_admin import credentials
 from firebase_admin import db
@@ -69,4 +73,3 @@ ref.push(
         "question": question,
     }
 )
-print(ref.get())
